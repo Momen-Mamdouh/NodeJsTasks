@@ -1,0 +1,32 @@
+[
+    {
+        "name": "shady",
+        "age": 24,
+        "city": "mansoura"
+    },
+    {
+        "name": "ahmed",
+        "age": 25,
+        "city": "cairo"
+    },
+    {
+        "name": "mohamed",
+        "age": 26,
+        "city": "alexandria"
+    },
+    {
+        "name": "ali",
+        "age": 27,
+        "city": "giza"
+    },
+    {
+        "name": "shosh",
+        "age": 27,
+        "city": "giza"
+    },
+    {
+        "name": "shosh",
+        "age": 27,
+        "city": "giza"
+    }
+]
