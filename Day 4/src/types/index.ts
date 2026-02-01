@@ -1,0 +1,56 @@
+import { Request } from "express";
+import { Document } from "mongoose";
+import { z } from "zod";
+
+export enum Role {
+  ADMIN = "admin",
+  USER = "user",
+}
+
+export interface IUser {
+  name: string;
+  email: string;
+  password: string;
+  role: Role;
+  age: number;
+  createdAt?: Date;
+  updatedAt?: Date;
+}
+
+export interface IUserDocument extends IUser, Document {}
+
+export interface IParamsWithId {
+  id: string;
+}
+
+export interface IGenralSchema {
+  body?: z.ZodSchema;
+  params?: z.ZodSchema;
+  query?: z.ZodSchema;
+}
+
+export interface ITokenPayload {
+  userId: string;
+  role: Role;
+}
+
+export interface IAuthRequest extends Request {
+  user?: ITokenPayload;
+}
+
+export interface IUser {
+  name: string;
+  email: string;
+  password: string;
+  role: Role;
+  age: number;
+}
+
+export interface ITokenPayload {
+  userId: string;
+  role: Role;
+}
+
+export interface IAuthRequest extends Request {
+  user?: ITokenPayload;
+}
